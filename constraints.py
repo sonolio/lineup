@@ -1,6 +1,6 @@
 from pulp import *
 
-BUDGET = 50000
+BUDGET = 60000
 
 desion_vars = []
 
