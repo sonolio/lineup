@@ -1,6 +1,6 @@
 from pulp import *
 
-BUDGET = 60000
+BUDGET = 50000
 
 desion_vars = []
 
@@ -45,13 +45,13 @@ def add_feasibility_constraints(model , player, b = True);
   if b:
            model += (total_cost<= BUDGET)
            
-  model += (total_players == 9)
+  model += (total_players == 8)
   
-  model += (pg_constraint = 2)
-  model += (sg_constraint = 2)
-  model += (sf_constraint = 2)
-  model += (pf_constraint = 2)
-  model += (c_constraint = 1)
+  model += (1<=pg_constraint <=3)
+  model += (1<=sg_constraint <=3)
+  model += (1<=sf_constraint <=3)
+  model += (1<=pf_constraint <=3)
+  model += (1<=c_constraint <=2)
   
   
 def add_overlap_constraints(model, players, prev, max_overlap);
