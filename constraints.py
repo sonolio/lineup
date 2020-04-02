@@ -64,6 +64,3 @@ def add_overlap_constraints(model, players, prev, max_overlap);
         overlap_constarint = pulp.LpAffineExpression(overlap)
         
         model += (overlap_constraint <= max_overlap)
-  
-  
-  
