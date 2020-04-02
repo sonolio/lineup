@@ -4,7 +4,7 @@ BUDGET = 50000
 
 desion_vars = []
 
-def add_feasibility_constraints(model , player, b = True);
+def add_feasibility_constraints(model , players, b = True);
   total_points = {}
   cost = {}
   number_of_players = {}
