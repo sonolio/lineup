@@ -12,16 +12,16 @@ def get_players(player_csv, teams):
         
         players = pd.DataFrame({'Name' : data[data.columns[0]],
                                                          'Salary' : data[data.columns[1]],
-							                                           'Team' : data[data.columns[2]],
-							                                           'PG' : 0,
-							                                           'SG' : 0,
-							                                           'SF' : 0,
-							                                           'PF' : 0,
-							                                           'C' : 0,
-							                                           'Opponent' : data[data.columns[4]],
-							                                           'Points' : data[data.columns[7]],
-							                                           'Ceiling' : data[data.columns[5]],
-							                                           'Floor' : data[data.columns[6]],})
+							  'Team' : data[data.columns[2]],
+							  'PG' : 0,
+							  'SG' : 0,
+							  'SF' : 0,
+							  'PF' : 0,
+							   'C' : 0,
+							  'Opponent' : data[data.columns[4]],
+							  'Points' : data[data.columns[7]],
+							  'Ceiling' : data[data.columns[5]],
+							  'Floor' : data[data.columns[6]],})
 
 for i, p in data.iterrows():
 		if 'PG' in p[3]:
